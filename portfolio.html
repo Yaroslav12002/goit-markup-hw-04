@@ -34,9 +34,21 @@
         </nav>
         <ul class="contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link" lang="en">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link" lang="en">
+              <svg class="icons-mail" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icons-phone" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -57,8 +69,8 @@
 
           <!-- examples -->
           <ul class="examples-list list">
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example1.jpg"
@@ -72,8 +84,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example2.jpg"
@@ -87,8 +99,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example3.jpg"
@@ -102,8 +114,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example4.jpg"
@@ -117,8 +129,8 @@
                 </div></a
               >
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example5.jpg"
@@ -132,8 +144,8 @@
                 </div></a
               >
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example6.jpg"
@@ -147,8 +159,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example7.jpg"
@@ -162,8 +174,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example8.jpg"
@@ -177,8 +189,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="#" target="_blank" rel="noreferrer noopener">
+            <li class="examples-item">
+              <a class="examples-link link" href="#" target="_blank" rel="noreferrer noopener">
                 <img
                   class="examples-list-img"
                   src="./images/example9.jpg"
@@ -200,30 +212,78 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <a class="footer-logo link" href="./" lang="en"
-          >Web<span class="logo-white">Studio</span></a
-        >
-        <address class="address">
-          <ul class="footer-list list">
-            <li class="footer-item">
-              <a
-                class="link"
-                href="https://goo.gl/maps/oQj3gx8Be4f7UzdeA"
-                target="_blank"
-                rel="noreferrer noopener"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer-item-alfa">
-              <a href="mailto:info@example.com" target="_blank" class="link" lang="en"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer-item-alfa">
-              <a href="tel:+380991111111" target="_blank" class="link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer-flex">
+          <div class="footer-flex-item">
+            <a class="footer-logo link" href="./" lang="en"
+              >Web<span class="logo-white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a
+                    class="footer-link link"
+                    href="https://goo.gl/maps/oQj3gx8Be4f7UzdeA"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    class="footer-link-alfa link"
+                    href="mailto:info@example.com"
+                    target="_blank"
+                    class="link"
+                    lang="en"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    class="footer-link-alfa link"
+                    href="tel:+380991111111"
+                    target="_blank"
+                    class="link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-flex-item">
+            <p class="footer-join-text">присоединяйтесь</p>
+            <ul class="footer-social-list list">
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="" aria-label="Инстаграм">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="" aria-label="Твитер">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="" aria-label="Фэйсбук">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="" aria-label="Линкедин">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
