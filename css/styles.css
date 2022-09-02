@@ -160,7 +160,6 @@ img {
 
 .contacts {
   display: flex;
-  align-items: center;
   margin-left: auto; /* Заставляет тел и почту прижаться вправо в header*/
 
   color: var(--main-cl);
@@ -171,7 +170,8 @@ img {
 }
 
 .contacts .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: var(--main-cl);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -215,8 +215,19 @@ img {
   text-transform: uppercase;
 }
 .hero {
-  background-color: var(--footer-bg-cl);
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--footer-bg-cl);
+  background-image: linear-gradient(to right, var(--hero-overlay-cl), var(--hero-overlay-cl)),
+    url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero .button {
@@ -239,20 +250,6 @@ img {
 .hero .button:hover,
 .hero .button:focus {
   background-color: var(--hero-btn-accent-cl);
-}
-
-.overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(to right, var(--hero-overlay-cl), var(--hero-overlay-cl)),
-    url('../images/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* 
@@ -304,10 +301,14 @@ img {
 }
 
 .features-thumb {
-  background-color: var(--btn-bg-cl);
-  text-align: center;
-  padding: 25px 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 270px;
   margin-bottom: 30px;
+
+  background-color: var(--btn-bg-cl);
 }
 
 /* 
@@ -583,6 +584,8 @@ img {
 }
 
 .footer-join-text {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-cl);
   font-weight: 700;
